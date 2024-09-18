@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg:#0f0f0f;
+}
+body{
+    background-color: var(--bg);
+}
+
+img{
+    width: 100px;
+}
