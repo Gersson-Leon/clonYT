@@ -5,12 +5,12 @@
 
 :root {
     --bg: #0f0f0f;
-    --hover:#343434b7;
+    --hover: #343434b7;
 }
 
 body {
     background-color: var(--bg);
-    
+
 }
 
 img {
@@ -20,7 +20,8 @@ img {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 5px 20px;
+    padding-top: 10px;
 }
 
 .logo-container {
@@ -33,13 +34,13 @@ img {
 .bg-gray-icon {
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 1px;
     border-radius: 50px;
 }
 
 .bg-gray-icon:hover {
     cursor: pointer;
-    background-color:var(--hover);
+    background-color: var(--hover);
 }
 
 .logo-container svg {
@@ -54,14 +55,93 @@ img {
 
 .search-container {
     display: flex;
+    margin-left: 10px;
+    gap: 20px;
+    align-items: center;
 }
 
 .input-container {
     display: flex;
+    width: 600px;
+    border-radius: 20px;
+    border: 1px solid #303030;
+    height: 40px;
 }
 
-.magnifying {}
+.input-container input{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    background-color: #121212;
+    color: white;
+    padding: 0 4px 0 16px;
+    font-size: 16px;
+}
+.input-container input:focus{
+    border: 1px solid #065fd4;
+}
+.magnifying {
+    width: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-left: 1px solid #303030;
+   background-color: var(--hover);
+   border-radius: 0 20px 20px 0px;
+  
+
+}
+.magnifying svg{
+    height: 23px;
+    width: 23px;
+}
+.magnifying:hover{
+    cursor: pointer;
+}
+.microphone-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: var(--hover);
+
+}
+
+.microphone-container svg {
+    height: 24px;
+    width: 24px;
+}
+
+.microphone-container:hover {
+    cursor: pointer;
+    background-color: #4b4848b7;
+
+}
+
+
 
 .user-container {
     display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.user-img-container {
+    width: 32px;
+    height: 32px;
+}
+
+.user-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 2px solid red;
+}
+
+.user-container img:hover {
+    cursor: pointer;
+    /* border: 2px solid red; */
 }
