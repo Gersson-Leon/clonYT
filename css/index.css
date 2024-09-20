@@ -34,7 +34,7 @@ img {
 .bg-gray-icon {
     display: flex;
     align-items: center;
-    padding: 1px;
+    padding: 8px;
     border-radius: 50px;
 }
 
