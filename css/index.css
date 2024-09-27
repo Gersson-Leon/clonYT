@@ -17,6 +17,16 @@ img {
     width: 30px;
 }
 
+.main-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+.aside{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -144,4 +154,36 @@ img {
 .user-container img:hover {
     cursor: pointer;
     /* border: 2px solid red; */
+}
+.aside{
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-icon{
+    margin-bottom: 35px;
+}
+.aside-icon-container{
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10%;
+   
+}
+.aside-icon-container:hover{
+    cursor: pointer;
+    background-color: var(--hover);
+    width: 100%;
+    
+}
+.aside-icon-container svg{
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+ 
+.aside-icon-text {
+    color: white;
 }
