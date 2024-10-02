@@ -187,3 +187,33 @@ img {
 .aside-icon-text {
     color: white;
 }
+
+/* -------------FILTROS------------- */
+.main{
+    padding: 30px;
+}
+
+.main-section-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    list-style: none;
+}
+.main-section-list-item {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #303030c0;
+    font-weight: 500;
+    transition: background-color 0.4s ease;
+}
+.main-section-list-item:hover {
+cursor: pointer;
+background-color: #c5a9a9c0;
+}
+.main-section-list-item:nth-child(1){
+    color: black;
+    background-color: white;
+    
+
+}
